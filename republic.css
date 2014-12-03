@@ -1,8 +1,9 @@
 *[class^="re"]{
     overflow: auto;
-    display: block;
+    display: inline-block;
     float: left;
     box-sizing: border-box;
+    min-height: 10px;
 }
 
 .re {
@@ -61,6 +62,9 @@
     *[class^="re"]{
         width: 50%;
     }
+    *[class^="re"]:empty {
+        width: 0px;
+    }
     .re {
         width: 100%;
     }
@@ -69,5 +73,8 @@
 @media(max-width:480px) {
     *[class^="re"]{
         width: 100%;
+    }
+    *[class^="re"]:empty {
+        width: 0px;
     }
 }
