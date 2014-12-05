@@ -1,5 +1,5 @@
 *[class^="re"]{
-    overflow: auto;
+    overflow: visible;
     display: inline-block;
     float: left;
     box-sizing: border-box;
