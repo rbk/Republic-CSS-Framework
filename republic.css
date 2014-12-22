@@ -59,11 +59,17 @@
 }
 
 @media(max-width:768px) {
-    *[class^="re"]{
+    *[class^="re-tablet-"]{
         width: 50%;
     }
+    *[class^="re-tablet-"]:empty {
+        width: 100%;
+    }
+    *[class^="re"]{
+        width: 100%;
+    }
     *[class^="re"]:empty {
-        width: 0px;
+        width: 100%;
     }
     .re {
         width: 100%;
@@ -75,6 +81,6 @@
         width: 100%;
     }
     *[class^="re"]:empty {
-        width: 0px;
+        width: 100%;
     }
 }

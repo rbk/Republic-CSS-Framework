@@ -1,7 +1,7 @@
 Republic CSS Framework
 ==========================
 
-Republic CSS supports IE5.5+, FF3+, Opera 9+, Chrome, and Safari 4+. Republic is designed as very tiny CSS framework without the use of extra nested classes like Pure.css or Bootstrap. Republic CSS is only **411 Bytes** with simple class names
+Republic CSS supports IE5.5+, FF3+, Opera 9+, Chrome, and Safari 4+. Republic is designed as very tiny CSS framework without the use of extra nested classes like Pure.css or Bootstrap. Republic CSS is only **483 Bytes** with simple class names
 
 DEMO
 ----
