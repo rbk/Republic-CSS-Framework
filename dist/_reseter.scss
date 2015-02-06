@@ -1,13 +1,40 @@
 *,
 *:after,
 *:before,
-*:focus {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
-	border: 0;
+*:focus,
+*:hover {
+	
+	// The Base
+	margin: 0;
+	padding: 0; 
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 1;
+	list-style: none;
+	text-decoration: none;
 	outline-color: transparent;
 	outline-style: none;
+	
+	// Border
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	box-sizing: border-box;	
+	
+	// Webkit
+	-webkit-box-sizing: border-box;
+	-webkit-appearance: none;
+	
+	// MOZ
+	-moz-box-sizing: border-box;
+	
+	// Opera
+	-o-box-sizing: border-box;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto; 
 }
