@@ -2,6 +2,7 @@
     float: left;
     width: 100%;
     min-height: 1px; 
+    padding: 10px;
 }
 
 .wrap {
@@ -23,6 +24,10 @@
 	z-index: 1;
 }
 
+.no-p {
+	padding: 0px;
+}
+
 //(2/3/15)	
 //===================================================================
 //======= 12
@@ -31,4 +36,12 @@
     .re#{$i} { 
         width: 100% / 12 * $i;
     }
+}
+
+@media screen and (max-width: 480px) {
+	@for $i from 1 through 12 {
+	    .re#{$i} { 
+	        width: 100%;
+	    }
+	}
 }
