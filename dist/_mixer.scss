@@ -8,7 +8,7 @@
 	padding-bottom: $width;
 }
 
-//(2/3/15)	
+//(2/3/15)  
 //===================================================================
 //======= Brands
 //===================================================================
@@ -16,5 +16,17 @@
     @extend %bg-#{$bg};
 }
 @mixin brand-c($color) {
-	@extend %c-#{$color};
+    @extend %c-#{$color};
+}
+
+//(2/9/15)  
+//===================================================================
+//======= Crossbrowser Opacity
+//===================================================================
+@mixin opacity($number: .5){
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" $number*100 ")";
+    filter: alpha(opacity= $number*100 );
+    -moz-opacity: $number;
+    -khtml-opacity: $number;
+    opacity: $number;
 }
