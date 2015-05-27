@@ -1,17 +1,11 @@
-//(2/3/15)	
-//===================================================================
-//======= Perfect Square
-//===================================================================
+// Perfect Square
 @mixin sq($width) {
 	width: $width;
 	height: 0px;
 	padding-bottom: $width;
 }
 
-//(2/3/15)  
-//===================================================================
-//======= Brands
-//===================================================================
+// Brands
 @mixin brand($bg) {
     @extend %bg-#{$bg};
 }
@@ -19,65 +13,7 @@
     @extend %c-#{$color};
 }
 
-//(2/9/15)  
-//===================================================================
-//======= Crossbrowser Opacity
-//===================================================================
-@mixin opacity($number: .5){
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" $number*100 ")";
-    filter: alpha(opacity= $number*100 );
-    -moz-opacity: $number;
-    -khtml-opacity: $number;
-    opacity: $number;
-}
-
-
-//(2/15/15)	
-//===================================================================
-//======= CSS3 Keyframes
-//===================================================================
-@mixin keyframes($animation-name) {
-	@-webkit-keyframes $animation-name {
-		@content;
-	}
-	@-moz-keyframes $animation-name {
-		@content;
-	}  
-	@-ms-keyframes $animation-name {
-		@content;
-	}
-	@-o-keyframes $animation-name {
-		@content;
-	}  
-	@keyframes $animation-name {
-		@content;
-	}
-}
-
-@mixin animation($str) {
-	-webkit-animation: #{$str};
-	-moz-animation: #{$str};
-	-ms-animation: #{$str};
-	-o-animation: #{$str};
-	animation: #{$str};      
-}
-
-//(2/15/15)	
-//===================================================================
-//======= CSS3 Transition 
-//===================================================================
-@mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
-}
-
-//(2/20/15)	
-//===================================================================
-//======= Crossbrowser Box Shadow
-//===================================================================
+// Crossbrowser Box Shadow
 @mixin box-shadow( $arg ){
 	-webkit-box-shadow: $arg;
 	-moz-box-shadow: $arg;
