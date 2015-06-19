@@ -1,11 +1,11 @@
-// Perfect Square
+// Perfect Square #!! Needs a Proper Test
 @mixin sq($width) {
 	width: $width;
 	height: 0px;
 	padding-bottom: $width;
 }
 
-// Brands
+// Brands #!! Forgot how this works
 @mixin brand($bg) {
     @extend %bg-#{$bg};
 }
