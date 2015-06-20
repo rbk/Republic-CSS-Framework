@@ -5,7 +5,7 @@
 	padding-bottom: $width;
 }
 
-// Brands #!! Forgot how this works
+// Brands #!! {ISSUE} Forgot how this works
 @mixin brand($bg) {
     @extend %bg-#{$bg};
 }
