@@ -7,7 +7,7 @@
 }
 
 // #!! {Mixin} Box Shadow / @include box-shadow(0, 1px, 1px, rgba(0, 0, 0, 0.075), inset);
-@mixin box-shadow($top $left $blur $color, $inset:""){
+@mixin box-shadow($top, $left, $blur, $color, $inset:""){
 	-webkit-box-shadow: $top $left $blur $color #{$inset};
 	-moz-box-shadow: $top $left $blur $color #{$inset};
 	box-shadow: $top $left $blur $color #{$inset};
