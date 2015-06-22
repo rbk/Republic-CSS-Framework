@@ -1,10 +1,3 @@
-// Perfect Square #!! Needs a Proper Test
-@mixin sq($width) {
-	width: $width;
-	height: 0px;
-	padding-bottom: $width;
-}
-
 // Brands #!! {ISSUE} Forgot how this works
 @mixin brand($bg) {
     @extend %bg-#{$bg};
@@ -13,9 +6,33 @@
     @extend %c-#{$color};
 }
 
-// Crossbrowser Box Shadow
-@mixin box-shadow( $arg ){
-	-webkit-box-shadow: $arg;
-	-moz-box-shadow: $arg;
-	box-shadow: $arg;
+// #!! {Mixin} Box Shadow / @include box-shadow(0, 1px, 1px, rgba(0, 0, 0, 0.075), inset);
+@mixin box-shadow($top $left $blur $color, $inset:""){
+	-webkit-box-shadow: $top $left $blur $color #{$inset};
+	-moz-box-shadow: $top $left $blur $color #{$inset};
+	box-shadow: $top $left $blur $color #{$inset};
+}
+
+// #!! {Mixin} CSS3 Transform / @include transform(rotate(42deg));
+@mixin transform($reg) {
+	-webkit-transform: $reg;
+	-moz-transform: $reg;
+	-ms-transform: $reg;
+	transform: $reg;
+}
+
+// #!! {Mixin} CSS3 Keyframes / @include keyframe(color) { 0% { color: #fff; } 100% { color: #000; } }
+@mixin keyframe($name) {
+	@-webkit-keyframes #{$name} {
+		@content; 
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	} 
 }
