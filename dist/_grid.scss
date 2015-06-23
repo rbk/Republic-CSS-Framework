@@ -1,13 +1,3 @@
-*[class^="re"]{
-    float: left;
-    width: 100%;
-    min-height: 1px; 
-    padding: 10px;
-	@media screen and (max-width: 560px) { 
-		padding: 5px;
-	}
-}
-
 .wrap {
 	max-width: 1200px;
     width: 100%;
@@ -38,6 +28,12 @@
 @for $i from 1 through 12 {
     .re#{$i} { 
         width: 100% / 12 * $i;
+	    float: left;
+	    min-height: 1px; 
+	    padding: 10px;
+		@media screen and (max-width: 560px) { 
+			padding: 5px;
+		}
     }
 }
 
@@ -46,6 +42,12 @@
 	@for $i from 1 through 12 {
 	    .re#{$i} { 
 	        width: 100%;
+		    float: left;
+		    min-height: 1px; 
+		    padding: 10px;
+			@media screen and (max-width: 560px) { 
+				padding: 5px;
+			}
 	    }
 	}
 }
