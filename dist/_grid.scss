@@ -4,6 +4,14 @@
     margin: 0 auto;
 }
 
+.rere {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px; 
+    padding: 10px;
+    text-overflow: ellipsis;
+}
+
 .wrap:after,
 .re:after {
 	content: "";
@@ -16,6 +24,7 @@
 	width: 100%;
 	position: relative;
 	z-index: 1;
+	text-overflow: ellipsis;
 }
 
 // Remove Padding
@@ -27,10 +36,8 @@
 // 1 - 12
 @for $i from 1 through 12 {
     .re#{$i} { 
+	    @extend .rere;
         width: 100% / 12 * $i;
-	    float: left;
-	    min-height: 1px; 
-	    padding: 10px;
 		@media screen and (max-width: 560px) { 
 			padding: 5px;
 		}
@@ -41,10 +48,7 @@
 @media screen and (max-width: 560px) {
 	@for $i from 1 through 12 {
 	    .re#{$i} { 
-	        width: 100%;
-		    float: left;
-		    min-height: 1px; 
-		    padding: 10px;
+        	width: 100%;
 			@media screen and (max-width: 560px) { 
 				padding: 5px;
 			}
