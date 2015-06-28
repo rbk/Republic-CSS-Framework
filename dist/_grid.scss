@@ -11,20 +11,40 @@
 	clear: both; 
 }
 
-// Base for rows
+// #!! {Class} .re Base for rows
 .re {
 	width: 100%;
 	position: relative;
 	z-index: 1;
 }
 
-// Remove Padding
+// #!! {Class} .no-p Remove Padding
 .no-p {
 	padding: 0px;
 }
 
 
-// 1 - 12
+// #!! {Class} .m-hide Mobile Hide
+.m-hide {
+	@media only screen and (max-width: 568px) {
+		display: none;
+	}
+	@media only screen and (min-width: 568px) {
+		display: block;
+	}
+}
+
+// #!! {Class} .m-hide Mobile Hide
+.m-show {
+	@media only screen and (max-width: 568px) {
+		display: block;
+	}
+	@media only screen and (min-width: 568px) {
+		display: noen;
+	}
+}
+
+//  #!! {Class} re1 - re12
 @for $i from 1 through 12 {
     .re#{$i} { 
         width: 100% / 12 * $i;
