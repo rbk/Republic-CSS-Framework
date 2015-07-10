@@ -1,6 +1,6 @@
 # Republic CSS Framework
 
-## [Mixins](_docs/mixins.md)
+## [Mixins](_md/mixins.md)
 
 
 
