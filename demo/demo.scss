@@ -1,1 +1,35 @@
-@import '../scss/_republic';
+$white: #fff;
+$gray: #f8f8f8;
+
+body {
+	background: $gray;
+}
+
+// Headings
+h1 {
+	font-size: 40px;
+	padding: 20px 10px;
+}
+h2 {
+	padding: 10px;
+	opacity: 0.9;
+}
+
+.content {
+	margin-bottom: 10px;
+}
+
+.shadow {
+	.box {
+		width: 100%;
+		background: $white;
+		text-align: center;
+		padding: 40px 0px;
+	}
+}
+
+.table {
+	padding: 10px;
+	padding-bottom: 20px;
+	background: #fff;
+}
