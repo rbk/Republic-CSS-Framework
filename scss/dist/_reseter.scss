@@ -46,17 +46,18 @@ audio:not([controls]) {
 }
 
 // LIST
-li {
+ul {
 	list-style: none;
 }
 
 // LINKS
 a {
-	background-color: transparent;
+	background: transparent;
 	border: 0;
-}
-a:active,a:hover {
-	outline: 0;
+	&:hover,
+	&:active {
+		outline: 0;
+	}
 }
 
 abbr[title] {
